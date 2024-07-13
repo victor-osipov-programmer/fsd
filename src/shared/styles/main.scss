@@ -1,0 +1,60 @@
+@import 'colors.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+html {
+    font-family: Roboto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    color: var(--dark-blue-color);
+}
+h1 {
+    font-size: 70px;
+    line-height: 82.03px;
+}
+h2 {
+    font-size: 50px;
+    line-height: 58.59px;
+}
+h3 {
+    font-size: 40px;
+    line-height: 46.88px;
+}
+h4 {
+    font-size: 35px;
+    line-height: 41.02px;
+}
+h5 {
+    font-size: 30px;
+    line-height: 35.16px;
+}
+h6 {
+    font-size: 25px;
+    line-height: 29.3px;
+}
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.77px;
+    color: var(--dark-grey-color);
+}
+
+ol {
+    padding-left: 1.5rem;
+    color: var(--dark-grey-color);
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+ol li::marker {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29.77px;
+}

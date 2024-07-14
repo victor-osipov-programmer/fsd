@@ -3,6 +3,12 @@
         Home page
         <app-button color="pale-yellow">Default Button</app-button>
 
+        <Suspense>
+            <CartProductsCount />
+
+            <template #fallback> Loading... </template>
+        </Suspense>
+
         <quote
             >“The first rule of any organic used in a business is that nature applied to an
             efficient operation will magnify the efficiency. The second is that organic applied to
@@ -31,6 +37,7 @@
 <script setup>
 import { AppButton } from '@/shared/ui/app-button'
 import { Quote } from '@/shared/ui/quote'
+import { CartProductsCount } from '@/features/cart-products-cout'
 </script>
 
 <style lang="scss" scoped></style>

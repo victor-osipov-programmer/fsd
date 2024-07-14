@@ -4,7 +4,7 @@
         <app-button color="pale-yellow">Default Button</app-button>
 
         <Suspense>
-            <CartProductsCount />
+            <cart />
 
             <template #fallback> Loading... </template>
         </Suspense>
@@ -37,7 +37,11 @@
 <script setup>
 import { AppButton } from '@/shared/ui/app-button'
 import { Quote } from '@/shared/ui/quote'
-import { CartProductsCount } from '@/features/cart-products-cout'
+import { Cart } from '@/features/cart'
+import { useProductModel } from '@/entities/product'
+
+const product_model = useProductModel()
+product_model.fetchProducts()
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,6 +1,6 @@
-import type { RouteRecordRaw } from "vue-router";
-import { HomePage } from "@/pages/home-page";
-import { AboutPage } from "@/pages/about-page";
+import type { RouteRecordRaw } from 'vue-router'
+import { HomePage } from '@/pages/home-page'
+import { AboutPage } from '@/pages/about-page'
 
 export const routes: RouteRecordRaw[] = [
     {
@@ -12,5 +12,5 @@ export const routes: RouteRecordRaw[] = [
         path: '/about',
         name: 'about-page',
         component: AboutPage
-    },
+    }
 ]

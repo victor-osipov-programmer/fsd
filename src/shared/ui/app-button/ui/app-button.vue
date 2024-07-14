@@ -1,19 +1,18 @@
 <template>
     <button class="app-button">
-        <slot>
+        <slot> </slot>
 
-        </slot>
-
-        <img src="@/shared/svg/next.svg" alt="">
+        <img src="@/shared/svg/next.svg" alt="" />
     </button>
 </template>
 
 <script lang="ts" setup>
-import type { Props } from './types';
-import { useStyles } from './styles';
+import type { Props } from './types'
+import { useStyles } from './styles'
+import type { IStyles } from '@/shared/types'
 
 const props = defineProps<Props>()
-const { background_color_style, color_style, border_style } = useStyles(props);
+const styles: IStyles = useStyles(props)
 </script>
 
 <style lang="scss" scoped>
@@ -25,14 +24,14 @@ const { background_color_style, color_style, border_style } = useStyles(props);
     padding: 28px 39px 29px 39px;
     border-radius: 16px;
     border: none;
-    background-color: v-bind(background_color_style);
+    background-color: v-bind("styles.app_button['background-color']");
 
-    color: v-bind(color_style);
+    color: v-bind("styles.app_button['color']");
     font-size: 20px;
     font-weight: 700;
     line-height: 23.44px;
     cursor: pointer;
 
-    border: v-bind(border_style);
+    border: v-bind("styles.app_button['border']");
 }
 </style>

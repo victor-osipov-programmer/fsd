@@ -1,26 +1,33 @@
-import { computed } from "vue";
-import type { Props } from "./types";
+import { computed, type StyleHTMLAttributes, type StyleValue } from 'vue'
+import type { Props } from './types'
+import type { IStyles } from '@/shared/types'
 
 export function useStyles(props: Props) {
-    const color_style = computed(() => {
-        switch (props.color) {
-            case undefined: return 'white'
-            case 'pale-yellow':
-            case 'white': return 'var(--dark-blue-color)'
-        }
-    })
-    const background_color_style = computed(() => {
-        switch (props.color) {
-            case undefined: return 'var(--dark-blue-color)';
-            case 'pale-yellow': return 'var(--pale-yellow-color)';
-            case 'white': return 'white';
-        }
-    })
-    const border_style = computed(() => {
-        switch (props.color) {
-            case 'white': return '1px solid var(--dark-blue-color)';
-        }
-    })
+    const styles: IStyles = {}
 
-    return { color_style, background_color_style, border_style }
+    switch (props.color) {
+        default:
+            styles.app_button = {
+                'background-color': 'var(--dark-blue-color)',
+                color: 'white',
+                border: 'none'
+            }
+            break
+        case 'pale-yellow':
+            styles.app_button = {
+                'background-color': 'var(--pale-yellow-color)',
+                color: 'var(--dark-blue-color)',
+                border: 'none'
+            }
+            break
+        case 'white':
+            styles.app_button = {
+                'background-color': 'white',
+                color: 'var(--dark-blue-color)',
+                border: '1px solid var(--dark-blue-color)'
+            }
+            break
+    }
+
+    return styles
 }

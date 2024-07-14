@@ -1,14 +1,10 @@
 <template>
     <div class="quote">
-        <slot>
-
-        </slot>
+        <slot> </slot>
     </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style lang="scss" scoped>
 .quote {
@@ -21,7 +17,7 @@
     font-weight: 700;
     line-height: 33.08px;
     text-align: center;
-    background-color: #F1EDEA;
+    background-color: #f1edea;
     color: var(--dark-grey-color);
 }
 </style>

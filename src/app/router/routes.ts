@@ -5,12 +5,12 @@ import { AboutPage } from '@/pages/about-page'
 export const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        name: 'home-page',
+        name: 'home',
         component: HomePage
     },
     {
         path: '/about',
-        name: 'about-page',
+        name: 'about',
         component: AboutPage
     }
 ]

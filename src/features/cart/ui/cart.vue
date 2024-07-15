@@ -1,6 +1,6 @@
 <template>
     <div class="cart">
-        <img src="@/shared/svg/cart.svg" alt="cart" />
+        <img class="img" src="@/shared/svg/cart.svg" alt="cart" />
         Cart ({{ product_model.products.length }})
     </div>
 </template>
@@ -12,13 +12,20 @@ const product_model = useProductModel()
 
 <style lang="scss" scoped>
 .cart {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 0.8rem;
+    padding: 5px 24px 5px 6px;
+
+    border-radius: 33px;
+    border: 1px solid #e0e0e0;
 
     font-size: 18px;
     font-weight: 600;
     line-height: 21.09px;
     color: var(--dark-blue-color);
+}
+.img {
+    cursor: pointer;
 }
 </style>

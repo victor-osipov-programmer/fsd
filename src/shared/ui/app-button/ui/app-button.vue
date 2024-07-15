@@ -19,7 +19,7 @@ const styles: IStyles = useStyles(props)
 .app-button {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 10px;
 
     padding: 28px 39px 29px 39px;
     border-radius: 16px;

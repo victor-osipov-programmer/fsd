@@ -35,12 +35,17 @@ defineProps<{
 
 <style lang="scss" scoped>
 .product-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+    gap: 0;
+
     border-radius: 30px;
     background-color: var(--white-color);
     padding: 29px 26px 16px 30px;
 }
 .category {
-    display: inline-block;
+    width: max-content;
     padding: 5px 12px 6px 12px;
     border-radius: 8px;
 
@@ -51,6 +56,9 @@ defineProps<{
     color: white;
     margin-bottom: 20px;
 }
+.img {
+    max-width: 100%;
+}
 .title {
     font-family: Roboto;
     font-size: 20px;
@@ -60,7 +68,7 @@ defineProps<{
     margin-bottom: 13px;
 }
 .line {
-    margin-bottom: 6px;
+    height: 0;
     border: none;
     border-top: 1px solid #dedddd;
 }
@@ -83,6 +91,7 @@ defineProps<{
     color: var(--dark-blue-color);
 }
 .product-card__footer {
+    margin-top: -10px;
     display: flex;
     justify-content: space-between;
     align-items: center;

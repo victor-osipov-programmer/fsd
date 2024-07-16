@@ -1,6 +1,6 @@
 <template>
     <div class="rating">
-        <img v-for="n in 5" :key="n" src="@/shared/svg/star.svg" alt="star" />
+        <img class="star" v-for="n in 5" :key="n" src="@/shared/svg/star.svg" alt="star" />
     </div>
 </template>
 

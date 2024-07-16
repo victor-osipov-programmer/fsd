@@ -67,11 +67,6 @@ defineProps<{
     color: var(--dark-blue-color);
     margin-bottom: 13px;
 }
-.line {
-    height: 0;
-    border: none;
-    border-top: 1px solid #dedddd;
-}
 .price-info {
     display: flex;
 

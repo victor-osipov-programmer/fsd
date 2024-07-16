@@ -5,6 +5,7 @@
         <offers></offers>
         <about></about>
         <our-products></our-products>
+        <reviews></reviews>
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import { CallHealthierWayLife } from '@/widgets/call-healthier-way-life'
 import { Offers } from '@/widgets/offers'
 import { About } from '@/widgets/about'
 import { OurProducts } from '@/widgets/our-products'
+import { Reviews } from '@/widgets/reviews'
 
 const product_model = useProductModel()
 product_model.fetchProducts()

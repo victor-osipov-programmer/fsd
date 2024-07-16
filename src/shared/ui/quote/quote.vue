@@ -1,7 +1,7 @@
 <template>
-    <div class="quote">
+    <p class="quote">
         <slot> </slot>
-    </div>
+    </p>
 </template>
 
 <script setup></script>
@@ -12,7 +12,6 @@
     padding: 69px 59px 69px 59px;
     border-radius: 30px;
 
-    // font-family: Open Sans;
     font-size: 20px;
     font-weight: 700;
     line-height: 33.08px;

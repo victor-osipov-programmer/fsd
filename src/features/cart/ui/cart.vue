@@ -1,6 +1,6 @@
 <template>
     <div class="cart">
-        <img class="img" src="@/shared/svg/cart.svg" alt="cart" />
+        <img class="list__img" src="@/shared/svg/cart.svg" alt="cart" />
         Cart ({{ product_model.products.length }})
     </div>
 </template>
@@ -25,7 +25,7 @@ const product_model = useProductModel()
     line-height: 21.09px;
     color: var(--dark-blue-color);
 }
-.img {
+.list__img {
     cursor: pointer;
 }
 </style>

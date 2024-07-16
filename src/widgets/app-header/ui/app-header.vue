@@ -27,5 +27,6 @@ import { Cart } from '@/features/cart'
 .right {
     display: flex;
     gap: 18px;
+    align-items: center;
 }
 </style>

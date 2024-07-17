@@ -6,7 +6,7 @@
                 <h2 class="header">Our Products</h2>
             </div>
 
-            <products></products>
+            <products :products="product_model.products.slice(9, 17)"></products>
 
             <app-button>Load More</app-button>
         </div>
@@ -16,6 +16,9 @@
 <script setup>
 import { Products } from '@/features/products'
 import { AppButton } from '@/shared/ui/app-button'
+import { useProductModel } from '@/entities/product'
+
+const product_model = useProductModel()
 </script>
 
 <style lang="scss" scoped>

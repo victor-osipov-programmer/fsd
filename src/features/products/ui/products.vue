@@ -1,16 +1,15 @@
 <template>
     <div class="products">
-        <product-card
-            v-for="product in product_model.products.slice(9, 17)"
-            :product
-        ></product-card>
+        <product-card v-for="product in products" :product></product-card>
     </div>
 </template>
 
-<script setup>
-import { ProductCard } from '@/entities/product'
-import { useProductModel } from '@/entities/product'
-const product_model = useProductModel()
+<script lang="ts" setup>
+import { ProductCard, type IProduct } from '@/entities/product'
+
+defineProps<{
+    products: IProduct[]
+}>()
 </script>
 
 <style lang="scss" scoped>

@@ -63,7 +63,6 @@ import { AppButton } from '@/shared/ui/app-button'
     margin-right: -53px;
 }
 .list {
-    list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 30px;

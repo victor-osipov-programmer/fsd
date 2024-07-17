@@ -4,7 +4,7 @@
             {{ product.category }}
         </p>
 
-        <img class="img" :src="product.thumbnail" alt="" />
+        <img class="img" :src="product.thumbnail" alt="product-thumbnail" />
 
         <p class="title">{{ product.title }}</p>
 

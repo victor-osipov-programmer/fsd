@@ -71,6 +71,10 @@ ol li::marker {
     line-height: 29.77px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -80,4 +84,10 @@ ol li::marker {
     height: 0;
     border: none;
     border-top: 1px solid #dedddd;
+}
+
+.ver-line {
+    height: 336px;
+    border: none;
+    border-left: 1px solid var(--light-grey-color);
 }

@@ -2,7 +2,7 @@
     <button class="app-button">
         <slot> </slot>
 
-        <img src="@/shared/svg/next.svg" alt="" />
+        <img class="app-button__img" src="@/shared/svg/next.svg" alt="button-icon" />
     </button>
 </template>
 

@@ -16,7 +16,6 @@
     display: flex;
     gap: 45px;
 
-    list-style-type: none;
     font-size: 20px;
     font-weight: 700;
     line-height: 23.44px;

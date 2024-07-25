@@ -16,10 +16,9 @@ const input = ref('')
 <style lang="scss" scoped>
 .search {
     display: block;
-    max-width: 376px;
     height: 66px;
     border-radius: 36px;
-    background-color: #fafafa;
+    background-color: var(--silver-color);
     padding: 5px 6px;
 }
 </style>

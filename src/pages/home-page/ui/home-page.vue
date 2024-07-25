@@ -1,7 +1,7 @@
 <template>
     <div class="home-page">
         <app-header />
-        <call-healthier-way-life />
+        <!-- <call-healthier-way-life />
         <offers />
         <about />
         <our-products />
@@ -11,7 +11,7 @@
         <categories />
         <news />
         <subscribe-form />
-        <app-footer />
+        <app-footer /> -->
     </div>
 </template>
 

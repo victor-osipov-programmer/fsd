@@ -2,7 +2,7 @@
     <router-link class="logo" :to="{ name: 'home' }">
         <img src="./logo.svg" alt="logo-img" />
 
-        Organick
+        <span class="logo__text">Organick</span>
     </router-link>
 </template>
 

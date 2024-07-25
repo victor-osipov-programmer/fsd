@@ -15,7 +15,7 @@ const model = defineModel()
     display: flex;
 }
 .input {
-    flex-grow: 1;
+    width: 300px;
     border: none;
     padding-left: 1rem;
     padding-right: 1rem;

@@ -1,15 +1,16 @@
 <template>
     <ul class="app-nav">
-        <li><router-link :to="{ name: 'home' }">Home</router-link></li>
-        <li><router-link :to="{ name: 'home' }">About</router-link></li>
-        <li><router-link :to="{ name: 'home' }">Pages</router-link></li>
-        <li><router-link :to="{ name: 'home' }">Shop</router-link></li>
-        <li><router-link :to="{ name: 'home' }">Projects</router-link></li>
-        <li><router-link :to="{ name: 'home' }">News</router-link></li>
+        <li v-for="link in links"><router-link :to="{ name: link.route_name }">{{ link.title }}</router-link></li>
     </ul>
 </template>
 
-<script setup></script>
+<script lang="ts" setup>
+import type { ILink } from '../types';
+
+defineProps<{
+    links: ILink[]
+}>()
+</script>
 
 <style lang="scss" scoped>
 .app-nav {

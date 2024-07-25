@@ -1,7 +1,7 @@
 <template>
     <div class="cart">
         <img class="list__img" src="@/shared/svg/cart.svg" alt="cart" />
-        Cart ({{ product_model.products.length }})
+        <span class="cart__text">Cart ({{ product_model.products.length }})</span>
     </div>
 </template>
 
@@ -18,7 +18,7 @@ const product_model = useProductModel()
     padding: 5px 24px 5px 6px;
 
     border-radius: 33px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #c5c5c5;
 
     font-size: 18px;
     font-weight: 600;
@@ -27,5 +27,13 @@ const product_model = useProductModel()
 }
 .list__img {
     cursor: pointer;
+}
+@media (width < 1200px) {
+    .cart {
+        padding: 5px 6px;
+    }
+    .cart__text {
+        display: none;
+    }
 }
 </style>
